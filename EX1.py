@@ -1,35 +1,20 @@
-class Width():
-    Width = 0
-
-class Height():
-    Height = 0
-
-class Length():
-    Length = 0
-
-class Pyramid():
-    Length = 0
-    Width = 0
-    Height = 0
-
-    def value(self):
-        print("Pyramid Length = ",str(self.Length.Length))
-        print("Pyramid Height = ", str(self.Height.Height))
-        print("Pyramid Width = ", str(self.Width.Width))
+class cylender1():
+    radius = 5
+    height = 10
 
     def cal(self):
-        self.cal = (self.Length.Length) * (self.Width.Width) * (self.Height.Height) / 3
+        self.cal = 3.14 * (self.radius * self. radius) * self.height
         return self.cal
+class cylender2():
+    radius = 7
+    height = 13
 
-Pyramid = Pyramid()
-Length.Length = 10
-Width.Width = 7
-Height.Height = 17
-Length = Length()
-Width = Width()
-Height = Height()
-Pyramid.Length = Length
-Pyramid.Width = Width
-Pyramid.Height = Height
-Pyramid.value()
-print("Calculated Pyramid = ",'{:.2f}'.format(Pyramid.cal()))
+    def cal2(self):
+        self.cal2 = 3.14 * (self.radius * self.radius) * self.height
+        return self.cal2
+
+c1 = cylender1()
+c2 = cylender2()
+
+print("1st cylinder = ",str(c1.cal()))
+print("1st cylinder = ",str(c2.cal2()))
